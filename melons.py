@@ -19,6 +19,7 @@ class AbstractMelonOrder(object):
 
         base_price = 5
 
+        # requires user input when instantiating to be perfect
         if self.species == "Christmas melon":
             base_price = base_price * 1.5
 
