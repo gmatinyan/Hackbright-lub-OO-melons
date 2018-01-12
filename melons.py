@@ -60,3 +60,16 @@ class InternationalMelonOrder(AbstractMelonOrder):
             total += 3
 
         return total
+
+
+class GovernmentMelonOrder(AbstractMelonOrder):
+    """A melon order from the U.S. Government."""
+
+    tax = 0
+    passed_inspection = False
+
+    def mark_inspection(self, passed):
+        """Checks if melon has been inspected and marks it."""
+        pass
+        # if passed:
+        #     self.passed_inspection = True
